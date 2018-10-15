@@ -24,7 +24,7 @@ sudo service jenkins start
 
 ## Configuración de esclavos Jenkins en instancias EC2 de AWS
 
-> Acceder a Jenkins desde <http://ec2-18-202-252-187.eu-west-1.compute.amazonaws.com:8080/>
+> Acceder a Jenkins desde <ec2-52-51-107-81.eu-west-1.compute.amazonaws.com:8080/>
 
 * Abrir el contenido del fichero de clave privada (everis-curso-jenkins.pem) para permitir la conexión por SSH entre ambas instancias.
     ```pem
