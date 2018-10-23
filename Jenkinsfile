@@ -1,20 +1,14 @@
 pipeline {
-    agent none
+    agent any
     stages {
-        stage('Test on Master') {
-            agent { 
-                label 'master'
-            }
+        stage('Ejemplo1') {
             steps {
-                sh 'touch ${WORKSPACE}/master'
+                echo 'Hello World'
             }
         }
-        stage('Test on Slave 1') {
-            agent { 
-                label 'slave-aws-1'
-            }
+        stage('Ejemplo2') {
             steps {
-                sh 'touch ${WORKSPACE}/slave'
+                echo 'Hello World 2'
             }
         }
     }
