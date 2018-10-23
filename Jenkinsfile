@@ -6,7 +6,7 @@ pipeline {
                 label 'master'
             }
             steps {
-                sh 'touch ${WORKSPACE}/master'
+                sh 'touch ${WORKSPACE}/develop'
             }
         }
         stage('Test on Slave 1') {
@@ -14,7 +14,7 @@ pipeline {
                 label 'slave-aws-1'
             }
             steps {
-                sh 'touch ${WORKSPACE}/slave'
+                sh 'touch ${WORKSPACE}/slave-develop'
             }
         }
     }
